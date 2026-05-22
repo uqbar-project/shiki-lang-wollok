@@ -1,0 +1,44 @@
+{
+  "name": "shiki-lang-wollok",
+  "version": "0.1.0",
+  "description": "Wollok language grammar for Shiki",
+  "type": "module",
+  "license": "LGPL-3.0",
+  "author": "Uqbar Foundation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javifernandes/shiki-lang-wollok.git"
+  },
+  "homepage": "https://github.com/javifernandes/shiki-lang-wollok#readme",
+  "bugs": {
+    "url": "https://github.com/javifernandes/shiki-lang-wollok/issues"
+  },
+  "keywords": [
+    "shiki",
+    "wollok",
+    "syntax-highlighting",
+    "textmate",
+    "grammar"
+  ],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "grammar/",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./grammar/wollok.tmLanguage.json": "./grammar/wollok.tmLanguage.json"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
